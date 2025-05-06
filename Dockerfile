@@ -1,6 +1,8 @@
 # Dockerfile
-FROM python:3.8-slim
+FROM python:3.9
 
-COPY app.py /app.py
+RUN pip install flask
 
-CMD ["python", "/app.py"]
+RUN wrongcommand  # ❌ 故意錯誤：這行是讓 GitHub Action fail 用的
+
+CMD ["python3", "app.py"]
