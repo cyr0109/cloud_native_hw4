@@ -31,3 +31,9 @@ Docker 會自動從 Docker Hub 下載 hello1 這個 tag 的 image 並執行。
 ```
 Hello from Docker homework!
 ```
+
+## 整體流程圖
+![GitHub Action 流程圖](images/githubaction流程圖.png)
+
+## Tag 的設計邏輯
+目前專案採用固定 tag hello1，主要目的為簡化測試與展示流程，方便 Docker Hub 中統一更新與管理。
